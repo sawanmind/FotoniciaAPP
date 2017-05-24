@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		335B113A1ED56985007E8AF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335B11391ED56985007E8AF5 /* AppDelegate.swift */; };
+		335B113C1ED56985007E8AF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335B113B1ED56985007E8AF5 /* ViewController.swift */; };
+		335B113F1ED56985007E8AF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 335B113D1ED56985007E8AF5 /* Main.storyboard */; };
+		335B11411ED56985007E8AF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 335B11401ED56985007E8AF5 /* Assets.xcassets */; };
+		335B11441ED56985007E8AF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 335B11421ED56985007E8AF5 /* LaunchScreen.storyboard */; };
+		335B114F1ED56985007E8AF5 /* FotoniciaAPPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335B114E1ED56985007E8AF5 /* FotoniciaAPPTests.swift */; };
+		335B115A1ED56985007E8AF5 /* FotoniciaAPPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335B11591ED56985007E8AF5 /* FotoniciaAPPUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		335B114B1ED56985007E8AF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 335B112E1ED56985007E8AF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 335B11351ED56985007E8AF5;
+			remoteInfo = FotoniciaAPP;
+		};
+		335B11561ED56985007E8AF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 335B112E1ED56985007E8AF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 335B11351ED56985007E8AF5;
+			remoteInfo = FotoniciaAPP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		335B11361ED56985007E8AF5 /* FotoniciaAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FotoniciaAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		335B11391ED56985007E8AF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		335B113B1ED56985007E8AF5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		335B113E1ED56985007E8AF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		335B11401ED56985007E8AF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		335B11431ED56985007E8AF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		335B11451ED56985007E8AF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		335B114A1ED56985007E8AF5 /* FotoniciaAPPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FotoniciaAPPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		335B114E1ED56985007E8AF5 /* FotoniciaAPPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotoniciaAPPTests.swift; sourceTree = "<group>"; };
+		335B11501ED56985007E8AF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		335B11551ED56985007E8AF5 /* FotoniciaAPPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FotoniciaAPPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		335B11591ED56985007E8AF5 /* FotoniciaAPPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotoniciaAPPUITests.swift; sourceTree = "<group>"; };
+		335B115B1ED56985007E8AF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		335B11331ED56985007E8AF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		335B11471ED56985007E8AF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		335B11521ED56985007E8AF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		335B112D1ED56985007E8AF5 = {
+			isa = PBXGroup;
+			children = (
+				335B11381ED56985007E8AF5 /* FotoniciaAPP */,
+				335B114D1ED56985007E8AF5 /* FotoniciaAPPTests */,
+				335B11581ED56985007E8AF5 /* FotoniciaAPPUITests */,
+				335B11371ED56985007E8AF5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		335B11371ED56985007E8AF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				335B11361ED56985007E8AF5 /* FotoniciaAPP.app */,
+				335B114A1ED56985007E8AF5 /* FotoniciaAPPTests.xctest */,
+				335B11551ED56985007E8AF5 /* FotoniciaAPPUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		335B11381ED56985007E8AF5 /* FotoniciaAPP */ = {
+			isa = PBXGroup;
+			children = (
+				335B11391ED56985007E8AF5 /* AppDelegate.swift */,
+				335B113B1ED56985007E8AF5 /* ViewController.swift */,
+				335B113D1ED56985007E8AF5 /* Main.storyboard */,
+				335B11401ED56985007E8AF5 /* Assets.xcassets */,
+				335B11421ED56985007E8AF5 /* LaunchScreen.storyboard */,
+				335B11451ED56985007E8AF5 /* Info.plist */,
+			);
+			path = FotoniciaAPP;
+			sourceTree = "<group>";
+		};
+		335B114D1ED56985007E8AF5 /* FotoniciaAPPTests */ = {
+			isa = PBXGroup;
+			children = (
+				335B114E1ED56985007E8AF5 /* FotoniciaAPPTests.swift */,
+				335B11501ED56985007E8AF5 /* Info.plist */,
+			);
+			path = FotoniciaAPPTests;
+			sourceTree = "<group>";
+		};
+		335B11581ED56985007E8AF5 /* FotoniciaAPPUITests */ = {
+			isa = PBXGroup;
+			children = (
+				335B11591ED56985007E8AF5 /* FotoniciaAPPUITests.swift */,
+				335B115B1ED56985007E8AF5 /* Info.plist */,
+			);
+			path = FotoniciaAPPUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		335B11351ED56985007E8AF5 /* FotoniciaAPP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 335B115E1ED56985007E8AF5 /* Build configuration list for PBXNativeTarget "FotoniciaAPP" */;
+			buildPhases = (
+				335B11321ED56985007E8AF5 /* Sources */,
+				335B11331ED56985007E8AF5 /* Frameworks */,
+				335B11341ED56985007E8AF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FotoniciaAPP;
+			productName = FotoniciaAPP;
+			productReference = 335B11361ED56985007E8AF5 /* FotoniciaAPP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		335B11491ED56985007E8AF5 /* FotoniciaAPPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 335B11611ED56985007E8AF5 /* Build configuration list for PBXNativeTarget "FotoniciaAPPTests" */;
+			buildPhases = (
+				335B11461ED56985007E8AF5 /* Sources */,
+				335B11471ED56985007E8AF5 /* Frameworks */,
+				335B11481ED56985007E8AF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				335B114C1ED56985007E8AF5 /* PBXTargetDependency */,
+			);
+			name = FotoniciaAPPTests;
+			productName = FotoniciaAPPTests;
+			productReference = 335B114A1ED56985007E8AF5 /* FotoniciaAPPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		335B11541ED56985007E8AF5 /* FotoniciaAPPUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 335B11641ED56985007E8AF5 /* Build configuration list for PBXNativeTarget "FotoniciaAPPUITests" */;
+			buildPhases = (
+				335B11511ED56985007E8AF5 /* Sources */,
+				335B11521ED56985007E8AF5 /* Frameworks */,
+				335B11531ED56985007E8AF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				335B11571ED56985007E8AF5 /* PBXTargetDependency */,
+			);
+			name = FotoniciaAPPUITests;
+			productName = FotoniciaAPPUITests;
+			productReference = 335B11551ED56985007E8AF5 /* FotoniciaAPPUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		335B112E1ED56985007E8AF5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Rajni;
+				TargetAttributes = {
+					335B11351ED56985007E8AF5 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					335B11491ED56985007E8AF5 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 335B11351ED56985007E8AF5;
+					};
+					335B11541ED56985007E8AF5 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 335B11351ED56985007E8AF5;
+					};
+				};
+			};
+			buildConfigurationList = 335B11311ED56985007E8AF5 /* Build configuration list for PBXProject "FotoniciaAPP" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 335B112D1ED56985007E8AF5;
+			productRefGroup = 335B11371ED56985007E8AF5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				335B11351ED56985007E8AF5 /* FotoniciaAPP */,
+				335B11491ED56985007E8AF5 /* FotoniciaAPPTests */,
+				335B11541ED56985007E8AF5 /* FotoniciaAPPUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		335B11341ED56985007E8AF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				335B11441ED56985007E8AF5 /* LaunchScreen.storyboard in Resources */,
+				335B11411ED56985007E8AF5 /* Assets.xcassets in Resources */,
+				335B113F1ED56985007E8AF5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		335B11481ED56985007E8AF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		335B11531ED56985007E8AF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		335B11321ED56985007E8AF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				335B113C1ED56985007E8AF5 /* ViewController.swift in Sources */,
+				335B113A1ED56985007E8AF5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		335B11461ED56985007E8AF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				335B114F1ED56985007E8AF5 /* FotoniciaAPPTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		335B11511ED56985007E8AF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				335B115A1ED56985007E8AF5 /* FotoniciaAPPUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		335B114C1ED56985007E8AF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 335B11351ED56985007E8AF5 /* FotoniciaAPP */;
+			targetProxy = 335B114B1ED56985007E8AF5 /* PBXContainerItemProxy */;
+		};
+		335B11571ED56985007E8AF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 335B11351ED56985007E8AF5 /* FotoniciaAPP */;
+			targetProxy = 335B11561ED56985007E8AF5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		335B113D1ED56985007E8AF5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				335B113E1ED56985007E8AF5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		335B11421ED56985007E8AF5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				335B11431ED56985007E8AF5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		335B115C1ED56985007E8AF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		335B115D1ED56985007E8AF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		335B115F1ED56985007E8AF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FotoniciaAPP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Zataksoftech.com.FotoniciaAPP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		335B11601ED56985007E8AF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FotoniciaAPP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Zataksoftech.com.FotoniciaAPP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		335B11621ED56985007E8AF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FotoniciaAPPTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Zataksoftech.com.FotoniciaAPPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FotoniciaAPP.app/FotoniciaAPP";
+			};
+			name = Debug;
+		};
+		335B11631ED56985007E8AF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FotoniciaAPPTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Zataksoftech.com.FotoniciaAPPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FotoniciaAPP.app/FotoniciaAPP";
+			};
+			name = Release;
+		};
+		335B11651ED56985007E8AF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = FotoniciaAPPUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Zataksoftech.com.FotoniciaAPPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = FotoniciaAPP;
+			};
+			name = Debug;
+		};
+		335B11661ED56985007E8AF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = FotoniciaAPPUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Zataksoftech.com.FotoniciaAPPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = FotoniciaAPP;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		335B11311ED56985007E8AF5 /* Build configuration list for PBXProject "FotoniciaAPP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				335B115C1ED56985007E8AF5 /* Debug */,
+				335B115D1ED56985007E8AF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		335B115E1ED56985007E8AF5 /* Build configuration list for PBXNativeTarget "FotoniciaAPP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				335B115F1ED56985007E8AF5 /* Debug */,
+				335B11601ED56985007E8AF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		335B11611ED56985007E8AF5 /* Build configuration list for PBXNativeTarget "FotoniciaAPPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				335B11621ED56985007E8AF5 /* Debug */,
+				335B11631ED56985007E8AF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		335B11641ED56985007E8AF5 /* Build configuration list for PBXNativeTarget "FotoniciaAPPUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				335B11651ED56985007E8AF5 /* Debug */,
+				335B11661ED56985007E8AF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 335B112E1ED56985007E8AF5 /* Project object */;
+}
