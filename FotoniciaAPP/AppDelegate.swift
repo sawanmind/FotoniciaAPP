@@ -7,15 +7,76 @@
 //
 
 import UIKit
+import CoreData
+import UserNotifications
+import IQKeyboardManagerSwift
+
+//let themeColor = UIColor(red: 0.01, green: 0.41, blue: 0.22, alpha: 1.0)
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
+    
+       
+    
+    func setRootHomeMenu() {
+        
+        // create viewController code...
+        let storyboard = UIStoryboard(name: "HomeStoryboard", bundle: nil)
+        
+        let mainViewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+        let leftViewController = storyboard.instantiateViewController(withIdentifier: "LeftViewController") as! LeftViewController
+        let rightViewController = storyboard.instantiateViewController(withIdentifier: "LeftViewController") as! LeftViewController
+        
+        let nvc: UINavigationController = UINavigationController(rootViewController: mainViewController)
+        
+        
+        leftViewController.mainViewController = nvc
+        SlideMenuOptions.panGesturesEnabled = false
+        let slideMenuController = ExSlideMenuController(mainViewController:nvc, leftMenuViewController: leftViewController, rightMenuViewController: rightViewController)
+        slideMenuController.automaticallyAdjustsScrollViewInsets = true
+        slideMenuController.delegate = mainViewController
+        self.window?.rootViewController = slideMenuController
+        self.window?.makeKeyAndVisible()
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        IQKeyboardManager.sharedManager().enable = true
+        
+        //window?.tintColor = themeColor
+
+        
+        UINavigationBar.appearance().barTintColor = UIColor.white
+        UINavigationBar.appearance().tintColor = UIColor.black
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName:UIColor.black]
+
+
+        if UserDefaults.getUserLoginStatus() {
+            self.setRootHomeMenu()
+        }
+        // iOS 10 support
+        if #available(iOS 10, *) {
+            UNUserNotificationCenter.current().requestAuthorization(options:[.badge, .alert, .sound]){ (granted, error) in }
+            application.registerForRemoteNotifications()
+        }
+            // iOS 9 support
+        else if #available(iOS 9, *) {
+            UIApplication.shared.registerUserNotificationSettings(UIUserNotificationSettings(types: [.badge, .sound, .alert], categories: nil))
+            UIApplication.shared.registerForRemoteNotifications()
+        }
+            // iOS 8 support
+        else if #available(iOS 8, *) {
+            UIApplication.shared.registerUserNotificationSettings(UIUserNotificationSettings(types: [.badge, .sound, .alert], categories: nil))
+            UIApplication.shared.registerForRemoteNotifications()
+        }
+            // iOS 7 support
+        else {  
+            application.registerForRemoteNotifications(matching: [.badge, .sound, .alert])
+        }
         return true
     }
 
@@ -41,6 +102,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    
+    // Called when APNs has assigned the device a unique token
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        // Convert token to string
+        let deviceTokenString = deviceToken.reduce("", {$0 + String(format: "%02X", $1)})
+        
+        // Print it to console
+        print("APNs device token: \(deviceTokenString)")
+        let userDefault = UserDefaults.standard
+        userDefault.set(deviceTokenString, forKey: "DeviceToken")
+        userDefault.synchronize()
+        
+        // Persist it in your backend in case it's new
+    }
+    
+    // Called when APNs failed to register the device for push notifications
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+        // Print the error to console (you should alert the user that registration failed)
+        print("APNs registration failed: \(error)")
+    }
+    
+    // Push notification received
+    func application(_ application: UIApplication, didReceiveRemoteNotification data: [AnyHashable : Any]) {
+        // Print notification payload data
+        print("Push notification received: \(data)")
+    }
 
 }
-

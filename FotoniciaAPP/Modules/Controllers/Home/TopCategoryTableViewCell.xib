@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="TopCategoryTableViewCell" id="KGk-i7-Jjw" customClass="TopCategoryTableViewCell" customModule="FotoniciaAPP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="119.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NlP-Il-bmv">
+                        <rect key="frame" x="0.0" y="117" width="320" height="3"/>
+                        <color key="backgroundColor" red="0.41642624139785767" green="0.43137311935424805" blue="0.42713648080825806" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="3" id="v1g-Lw-a6R"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="wVS-DN-NtJ">
+                        <rect key="frame" x="13" y="15" width="295" height="90"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="oQp-1a-c89">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <connections>
+                            <outlet property="dataSource" destination="KGk-i7-Jjw" id="7oz-ok-xem"/>
+                            <outlet property="delegate" destination="KGk-i7-Jjw" id="ogt-eF-WFe"/>
+                        </connections>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="NlP-Il-bmv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="2SR-Hs-Pgm"/>
+                    <constraint firstItem="NlP-Il-bmv" firstAttribute="top" secondItem="wVS-DN-NtJ" secondAttribute="bottom" constant="12" id="7ra-eG-xuB"/>
+                    <constraint firstAttribute="trailing" secondItem="wVS-DN-NtJ" secondAttribute="trailing" constant="12" id="F0H-VR-zVR"/>
+                    <constraint firstItem="wVS-DN-NtJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="ajn-0p-PQV"/>
+                    <constraint firstItem="wVS-DN-NtJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="g3p-WU-U8A"/>
+                    <constraint firstAttribute="trailing" secondItem="NlP-Il-bmv" secondAttribute="trailing" id="jvQ-u9-Fm2"/>
+                    <constraint firstAttribute="bottom" secondItem="NlP-Il-bmv" secondAttribute="bottom" constant="-0.5" id="voN-Ee-bS2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="collectionView" destination="wVS-DN-NtJ" id="g8H-o1-JHF"/>
+                <outlet property="separator" destination="NlP-Il-bmv" id="JAS-Iy-b0u"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

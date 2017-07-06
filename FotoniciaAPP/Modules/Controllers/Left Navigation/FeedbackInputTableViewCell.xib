@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="FeedbackInputTableViewCell" id="KGk-i7-Jjw" customClass="FeedbackInputTableViewCell" customModule="FotoniciaAPP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="129.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKy-DE-n5O">
+                        <rect key="frame" x="13" y="8" width="295" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.29040142889999998" green="0.29435756800000001" blue="0.2767415345" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EY1-gU-oDD">
+                        <rect key="frame" x="8" y="34" width="300" height="81"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                        <color key="textColor" red="0.29040142889999998" green="0.29435756800000001" blue="0.2767415345" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QFZ-PX-ZSJ">
+                        <rect key="frame" x="13" y="129" width="295" height="1"/>
+                        <color key="backgroundColor" red="0.29040142889999998" green="0.29435756800000001" blue="0.2767415345" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="G2m-Sx-b9h"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="QFZ-PX-ZSJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="1Tr-zg-ScV"/>
+                    <constraint firstItem="QFZ-PX-ZSJ" firstAttribute="top" secondItem="EY1-gU-oDD" secondAttribute="bottom" constant="14" id="4Kw-Ve-3sw"/>
+                    <constraint firstItem="PKy-DE-n5O" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="BrQ-2B-jfS"/>
+                    <constraint firstAttribute="trailing" secondItem="PKy-DE-n5O" secondAttribute="trailing" constant="12" id="MLV-oZ-bdE"/>
+                    <constraint firstItem="EY1-gU-oDD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Ukm-4a-4E1"/>
+                    <constraint firstAttribute="trailing" secondItem="EY1-gU-oDD" secondAttribute="trailing" constant="12" id="WkY-Wa-L9Y"/>
+                    <constraint firstItem="PKy-DE-n5O" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="ir3-sp-ZJY"/>
+                    <constraint firstItem="EY1-gU-oDD" firstAttribute="top" secondItem="PKy-DE-n5O" secondAttribute="bottom" constant="8" id="jMg-e7-fUJ"/>
+                    <constraint firstAttribute="trailing" secondItem="QFZ-PX-ZSJ" secondAttribute="trailing" constant="12" id="tOb-IZ-2of"/>
+                    <constraint firstAttribute="bottom" secondItem="QFZ-PX-ZSJ" secondAttribute="bottom" constant="-0.5" id="w6R-6E-dh7"/>
+                </constraints>
+            </tableViewCellContentView>
+        </tableViewCell>
+    </objects>
+</document>

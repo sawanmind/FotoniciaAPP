@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ReviewAndRatingsOverallHeaderTableViewCell" rowHeight="295" id="KGk-i7-Jjw" customClass="ReviewAndRatingsOverallHeaderTableViewCell" customModule="FotoniciaAPP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="220"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="219.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 Ratings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="cwK-xK-hDl">
+                        <rect key="frame" x="16" y="21" width="172" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="172" id="e5K-2r-FZh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.3921198844909668" green="0.39218056201934814" blue="0.39210665225982666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ycL-36-EGX" customClass="RatingView" customModule="FotoniciaAPP" customModuleProvider="target">
+                        <rect key="frame" x="189" y="21" width="172" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="TuZ-Vi-PbM"/>
+                            <constraint firstAttribute="width" constant="172" id="kDt-0x-xSE"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="StarEmpty"/>
+                            <userDefinedRuntimeAttribute type="image" keyPath="fullImage" value="StarFull"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="minRating">
+                                <integer key="value" value="0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="maxRating">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="editable" value="NO"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="halfRatings" value="NO"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="floatRatings" value="NO"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4 Ratings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="71b-1W-gi6">
+                        <rect key="frame" x="16" y="59" width="172" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.3921198844909668" green="0.39218056201934814" blue="0.39210665225982666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e2r-w5-6H8" customClass="RatingView" customModule="FotoniciaAPP" customModuleProvider="target">
+                        <rect key="frame" x="189" y="59" width="172" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Yn8-bZ-9i6"/>
+                            <constraint firstAttribute="width" constant="172" id="joB-Nx-Pci"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="StarEmpty"/>
+                            <userDefinedRuntimeAttribute type="image" keyPath="fullImage" value="StarFull"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="minRating">
+                                <integer key="value" value="0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="maxRating">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="editable" value="NO"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="halfRatings" value="NO"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="floatRatings" value="NO"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 Ratings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="0Hc-m1-Sfx">
+                        <rect key="frame" x="16" y="97" width="172" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.3921198844909668" green="0.39218056201934814" blue="0.39210665225982666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d0T-Nb-aVA" customClass="RatingView" customModule="FotoniciaAPP" customModuleProvider="target">
+                        <rect key="frame" x="189" y="97" width="172" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="172" id="R2E-Jf-Xbf"/>
+                            <constraint firstAttribute="height" constant="30" id="sr4-gy-Kcv"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="StarEmpty"/>
+                            <userDefinedRuntimeAttribute type="image" keyPath="fullImage" value="StarFull"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="minRating">
+                                <integer key="value" value="0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="maxRating">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="editable" value="NO"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="halfRatings" value="NO"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="floatRatings" value="NO"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 Ratings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="Egf-K6-RfK">
+                        <rect key="frame" x="17.5" y="135" width="172" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.3921198844909668" green="0.39218056201934814" blue="0.39210665225982666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oYC-7g-WRc" customClass="RatingView" customModule="FotoniciaAPP" customModuleProvider="target">
+                        <rect key="frame" x="189" y="135" width="172" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="96t-wN-VfK"/>
+                            <constraint firstAttribute="width" constant="172" id="oe4-Ic-HZR"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="StarEmpty"/>
+                            <userDefinedRuntimeAttribute type="image" keyPath="fullImage" value="StarFull"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="minRating">
+                                <integer key="value" value="0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="maxRating">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="editable" value="NO"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="halfRatings" value="NO"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="floatRatings" value="NO"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 Ratings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="hs6-MB-xHL">
+                        <rect key="frame" x="18" y="173" width="172" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.3921198844909668" green="0.39218056201934814" blue="0.39210665225982666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nAc-js-3Pp" customClass="RatingView" customModule="FotoniciaAPP" customModuleProvider="target">
+                        <rect key="frame" x="189" y="173" width="172" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="172" id="bsv-Dh-01v"/>
+                            <constraint firstAttribute="height" constant="30" id="lJh-s2-UgE"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="StarEmpty"/>
+                            <userDefinedRuntimeAttribute type="image" keyPath="fullImage" value="StarFull"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="minRating">
+                                <integer key="value" value="0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="maxRating">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="editable" value="NO"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="halfRatings" value="NO"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="floatRatings" value="NO"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0SE-xN-Bfu">
+                        <rect key="frame" x="27" y="219" width="333" height="1"/>
+                        <color key="backgroundColor" red="0.82345682382583618" green="0.82357591390609741" blue="0.82343071699142456" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="kkL-YA-2bi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="d0T-Nb-aVA" firstAttribute="leading" secondItem="oYC-7g-WRc" secondAttribute="leading" id="1K6-ra-lua"/>
+                    <constraint firstItem="0Hc-m1-Sfx" firstAttribute="top" secondItem="71b-1W-gi6" secondAttribute="bottom" constant="8" symbolic="YES" id="3Uy-k9-VbA"/>
+                    <constraint firstItem="nAc-js-3Pp" firstAttribute="leading" secondItem="hs6-MB-xHL" secondAttribute="trailing" constant="-1" id="5L6-qM-sfj"/>
+                    <constraint firstItem="0SE-xN-Bfu" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="6" id="5b3-gV-BH4"/>
+                    <constraint firstItem="e2r-w5-6H8" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="87.5" id="6NK-2N-5AE"/>
+                    <constraint firstItem="d0T-Nb-aVA" firstAttribute="top" secondItem="e2r-w5-6H8" secondAttribute="bottom" constant="8" symbolic="YES" id="6zT-3p-3P8"/>
+                    <constraint firstItem="d0T-Nb-aVA" firstAttribute="leading" secondItem="0Hc-m1-Sfx" secondAttribute="trailing" constant="1" id="8P5-56-a16"/>
+                    <constraint firstItem="e2r-w5-6H8" firstAttribute="top" secondItem="ycL-36-EGX" secondAttribute="bottom" constant="8" symbolic="YES" id="E3D-tB-6cd"/>
+                    <constraint firstItem="0Hc-m1-Sfx" firstAttribute="top" secondItem="d0T-Nb-aVA" secondAttribute="top" id="G1g-iL-hRR"/>
+                    <constraint firstItem="e2r-w5-6H8" firstAttribute="leading" secondItem="d0T-Nb-aVA" secondAttribute="leading" id="Gy4-yd-0y2"/>
+                    <constraint firstItem="71b-1W-gi6" firstAttribute="top" secondItem="e2r-w5-6H8" secondAttribute="top" id="KIp-kL-Lfu"/>
+                    <constraint firstItem="oYC-7g-WRc" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="87.5" id="MrU-fV-qbU"/>
+                    <constraint firstItem="0SE-xN-Bfu" firstAttribute="top" secondItem="hs6-MB-xHL" secondAttribute="bottom" constant="16" id="NkW-qU-kCq"/>
+                    <constraint firstItem="ycL-36-EGX" firstAttribute="top" secondItem="cwK-xK-hDl" secondAttribute="top" id="P2N-Jl-cWh"/>
+                    <constraint firstItem="e2r-w5-6H8" firstAttribute="leading" secondItem="71b-1W-gi6" secondAttribute="trailing" constant="1" id="QgG-Tb-ogH"/>
+                    <constraint firstItem="d0T-Nb-aVA" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="87.5" id="RXj-Mv-KPt"/>
+                    <constraint firstItem="Egf-K6-RfK" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="-84" id="Sn6-15-jl5"/>
+                    <constraint firstItem="0SE-xN-Bfu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="19" id="Syc-w2-byh"/>
+                    <constraint firstItem="cwK-xK-hDl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="13" id="Xy9-bl-Ktu"/>
+                    <constraint firstItem="oYC-7g-WRc" firstAttribute="leading" secondItem="Egf-K6-RfK" secondAttribute="trailing" constant="-0.5" id="ZYd-Gc-P8z"/>
+                    <constraint firstItem="71b-1W-gi6" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="-85.5" id="aPj-Gk-yEX"/>
+                    <constraint firstItem="ycL-36-EGX" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="87.5" id="apG-5E-lPT"/>
+                    <constraint firstItem="oYC-7g-WRc" firstAttribute="top" secondItem="d0T-Nb-aVA" secondAttribute="bottom" constant="8" symbolic="YES" id="bqO-Gd-6OT"/>
+                    <constraint firstItem="nAc-js-3Pp" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="87.5" id="cnD-4d-St9"/>
+                    <constraint firstItem="hs6-MB-xHL" firstAttribute="top" secondItem="nAc-js-3Pp" secondAttribute="top" id="e3I-8i-xds"/>
+                    <constraint firstItem="Egf-K6-RfK" firstAttribute="top" secondItem="oYC-7g-WRc" secondAttribute="top" id="gkM-Rr-wc7"/>
+                    <constraint firstItem="Egf-K6-RfK" firstAttribute="top" secondItem="0Hc-m1-Sfx" secondAttribute="bottom" constant="8" symbolic="YES" id="iqx-YT-03K"/>
+                    <constraint firstItem="hs6-MB-xHL" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="-83.5" id="jYq-fM-qs9"/>
+                    <constraint firstItem="nAc-js-3Pp" firstAttribute="top" secondItem="oYC-7g-WRc" secondAttribute="bottom" constant="8" symbolic="YES" id="ja6-Vy-fxT"/>
+                    <constraint firstItem="hs6-MB-xHL" firstAttribute="bottom" secondItem="nAc-js-3Pp" secondAttribute="bottom" id="nkb-xp-1WJ"/>
+                    <constraint firstItem="ycL-36-EGX" firstAttribute="leading" secondItem="cwK-xK-hDl" secondAttribute="trailing" constant="1" id="pcz-Fb-FRP"/>
+                    <constraint firstItem="hs6-MB-xHL" firstAttribute="top" secondItem="Egf-K6-RfK" secondAttribute="bottom" constant="8" symbolic="YES" id="qc9-yh-8Bm"/>
+                    <constraint firstItem="71b-1W-gi6" firstAttribute="top" secondItem="cwK-xK-hDl" secondAttribute="bottom" constant="8" symbolic="YES" id="r6c-df-CR0"/>
+                    <constraint firstItem="oYC-7g-WRc" firstAttribute="leading" secondItem="nAc-js-3Pp" secondAttribute="leading" id="sji-nh-HAR"/>
+                    <constraint firstItem="0Hc-m1-Sfx" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="-85.5" id="uO3-xD-sPb"/>
+                    <constraint firstItem="ycL-36-EGX" firstAttribute="leading" secondItem="e2r-w5-6H8" secondAttribute="leading" id="yQT-SP-Nlf"/>
+                    <constraint firstItem="cwK-xK-hDl" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="-85.5" id="yVj-uV-c71"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="viewRating1" destination="nAc-js-3Pp" id="Sjn-1S-BCA"/>
+                <outlet property="viewRating2" destination="oYC-7g-WRc" id="SHW-xz-GS5"/>
+                <outlet property="viewRating3" destination="d0T-Nb-aVA" id="M9e-EP-qFK"/>
+                <outlet property="viewRating4" destination="e2r-w5-6H8" id="4Ed-6o-aTu"/>
+                <outlet property="viewRating5" destination="ycL-36-EGX" id="4ZD-oV-y7m"/>
+            </connections>
+            <point key="canvasLocation" x="61.5" y="101.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="StarEmpty" width="22" height="22"/>
+        <image name="StarFull" width="22" height="22"/>
+    </resources>
+</document>

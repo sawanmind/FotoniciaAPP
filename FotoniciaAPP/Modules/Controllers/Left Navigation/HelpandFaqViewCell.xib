@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="FeedbackMultipleOptionTableViewCell" id="KUF-99-qd6" customClass="FeedbackMultipleOptionTableViewCell" customModule="FotoniciaAPP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KUF-99-qd6" id="Sl6-hP-VyL">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="109.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="j0w-Y0-YVz">
+                        <rect key="frame" x="13" y="39" width="295" height="60"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1vs-km-2qm">
+                                <rect key="frame" x="0.0" y="18" width="59" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <inset key="titleEdgeInsets" minX="-20" minY="50" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Very Good" image="Cart">
+                                    <color key="titleColor" red="0.29040142889999998" green="0.29435756800000001" blue="0.2767415345" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z7s-gA-TF4">
+                                <rect key="frame" x="59" y="18" width="59" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <inset key="titleEdgeInsets" minX="-20" minY="50" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Good" image="Cart">
+                                    <color key="titleColor" red="0.29040142889999998" green="0.29435756800000001" blue="0.2767415345" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="moU-xr-bTv">
+                                <rect key="frame" x="118" y="18" width="59" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <inset key="titleEdgeInsets" minX="-20" minY="50" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Fair" image="Cart">
+                                    <color key="titleColor" red="0.29040142889999998" green="0.29435756800000001" blue="0.2767415345" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5pH-er-i9s">
+                                <rect key="frame" x="177" y="18" width="59" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <inset key="titleEdgeInsets" minX="-20" minY="50" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Poor" image="Cart">
+                                    <color key="titleColor" red="0.29040142889999998" green="0.29435756800000001" blue="0.2767415345" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRl-m5-bLw">
+                                <rect key="frame" x="236" y="18" width="59" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <inset key="titleEdgeInsets" minX="-20" minY="50" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Very Poor" image="Cart">
+                                    <color key="titleColor" red="0.29040142889999998" green="0.29435756800000001" blue="0.2767415345" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="o5R-2a-drT"/>
+                        </constraints>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="How would you rate your overall experience with our services" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OR2-88-TjS">
+                        <rect key="frame" x="8" y="0.0" width="295" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.29040142889999998" green="0.29435756800000001" blue="0.2767415345" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="j0w-Y0-YVz" firstAttribute="leading" secondItem="Sl6-hP-VyL" secondAttribute="leading" constant="13" id="523-js-tfM"/>
+                    <constraint firstItem="j0w-Y0-YVz" firstAttribute="top" secondItem="OR2-88-TjS" secondAttribute="bottom" constant="8" id="YND-p0-zEk"/>
+                    <constraint firstAttribute="trailing" secondItem="j0w-Y0-YVz" secondAttribute="trailing" constant="12" id="c2r-el-lPJ"/>
+                    <constraint firstItem="OR2-88-TjS" firstAttribute="top" secondItem="Sl6-hP-VyL" secondAttribute="top" constant="10" id="hfT-vo-9l0"/>
+                    <constraint firstItem="OR2-88-TjS" firstAttribute="leading" secondItem="Sl6-hP-VyL" secondAttribute="leading" constant="13" id="iOk-6h-pVl"/>
+                    <constraint firstAttribute="trailing" secondItem="OR2-88-TjS" secondAttribute="trailing" constant="12" id="r2A-XL-0Es"/>
+                    <constraint firstAttribute="bottom" secondItem="j0w-Y0-YVz" secondAttribute="bottom" constant="10.5" id="sdm-CU-uGZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="122" y="78"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Cart" width="24" height="24"/>
+    </resources>
+</document>

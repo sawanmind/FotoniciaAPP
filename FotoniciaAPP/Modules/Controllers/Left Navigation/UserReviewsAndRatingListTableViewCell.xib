@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="UserReviewsAndRatingListTableViewCell" rowHeight="103" id="KGk-i7-Jjw" customClass="UserReviewsAndRatingListTableViewCell" customModule="FotoniciaAPP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="105"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="104.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n6g-xp-2sE">
+                        <rect key="frame" x="13" y="8" width="190" height="24"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                        <color key="textColor" red="0.29040142889999998" green="0.29435756800000001" blue="0.2767415345" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30 APRIL 2017" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oAT-in-9XQ">
+                        <rect key="frame" x="211" y="8" width="97" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="97" id="nZv-LI-Nd4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                        <color key="textColor" red="0.29040142889999998" green="0.29435756800000001" blue="0.2767415345" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r39-3F-edn" customClass="RatingView" customModule="FotoniciaAPP" customModuleProvider="target">
+                        <rect key="frame" x="13" y="40" width="135" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="AKT-2n-gdz"/>
+                            <constraint firstAttribute="width" constant="135" id="JBh-9c-bem"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="StarEmpty"/>
+                            <userDefinedRuntimeAttribute type="image" keyPath="fullImage" value="StarFull"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="minRating">
+                                <integer key="value" value="0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="maxRating">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="editable" value="NO"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="halfRatings" value="NO"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="floatRatings" value="NO"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Asheesh Verma" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Sy-ku-lD0">
+                        <rect key="frame" x="156" y="45" width="152" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.29040142889999998" green="0.29435756800000001" blue="0.2767415345" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="One of the best photo prints i have been in the market." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j1B-Zv-afC">
+                        <rect key="frame" x="13" y="76" width="295" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.29040142889999998" green="0.29435756800000001" blue="0.2767415345" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GF3-j6-hC6">
+                        <rect key="frame" x="13" y="104" width="295" height="1"/>
+                        <color key="backgroundColor" red="0.29040142889999998" green="0.29435756800000001" blue="0.2767415345" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="f8K-rn-1DR"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="n6g-xp-2sE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="05F-hN-sJy"/>
+                    <constraint firstItem="r39-3F-edn" firstAttribute="top" secondItem="n6g-xp-2sE" secondAttribute="bottom" constant="8" id="ATn-MK-vWG"/>
+                    <constraint firstItem="3Sy-ku-lD0" firstAttribute="leading" secondItem="r39-3F-edn" secondAttribute="trailing" constant="8" id="DWS-1x-iig"/>
+                    <constraint firstItem="oAT-in-9XQ" firstAttribute="top" secondItem="n6g-xp-2sE" secondAttribute="top" id="Fcj-Q8-Uwh"/>
+                    <constraint firstAttribute="trailing" secondItem="GF3-j6-hC6" secondAttribute="trailing" constant="12" id="WWX-aB-CKg"/>
+                    <constraint firstItem="r39-3F-edn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="gYr-gn-BqF"/>
+                    <constraint firstItem="oAT-in-9XQ" firstAttribute="trailing" secondItem="3Sy-ku-lD0" secondAttribute="trailing" id="iDt-HX-SDn"/>
+                    <constraint firstItem="3Sy-ku-lD0" firstAttribute="top" secondItem="n6g-xp-2sE" secondAttribute="bottom" constant="13" id="khO-eL-aV1"/>
+                    <constraint firstAttribute="trailing" secondItem="j1B-Zv-afC" secondAttribute="trailing" constant="12" id="mD3-V5-EBk"/>
+                    <constraint firstItem="3Sy-ku-lD0" firstAttribute="top" secondItem="oAT-in-9XQ" secondAttribute="bottom" constant="13" id="n9l-Uy-95T"/>
+                    <constraint firstAttribute="bottom" secondItem="GF3-j6-hC6" secondAttribute="bottom" constant="-0.5" id="oIb-3E-UCW"/>
+                    <constraint firstAttribute="trailing" secondItem="3Sy-ku-lD0" secondAttribute="trailing" constant="12" id="oyf-JV-2r8"/>
+                    <constraint firstItem="j1B-Zv-afC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="qnw-hs-Kc6"/>
+                    <constraint firstItem="oAT-in-9XQ" firstAttribute="leading" secondItem="n6g-xp-2sE" secondAttribute="trailing" constant="8" id="rxS-rj-L4e"/>
+                    <constraint firstItem="n6g-xp-2sE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="tby-sn-ryl"/>
+                    <constraint firstItem="GF3-j6-hC6" firstAttribute="top" secondItem="j1B-Zv-afC" secondAttribute="bottom" constant="8" id="yzV-z6-2Ov"/>
+                    <constraint firstItem="GF3-j6-hC6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="zGy-A0-zqa"/>
+                    <constraint firstItem="j1B-Zv-afC" firstAttribute="top" secondItem="r39-3F-edn" secondAttribute="bottom" constant="11" id="zgg-eh-y82"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblDate" destination="oAT-in-9XQ" id="XlK-Tv-LMa"/>
+                <outlet property="lblDescription" destination="j1B-Zv-afC" id="orO-OR-7S2"/>
+                <outlet property="lblTitle" destination="n6g-xp-2sE" id="cJr-8m-idh"/>
+                <outlet property="lblUserName" destination="3Sy-ku-lD0" id="RM8-P0-Wt7"/>
+                <outlet property="ratingView" destination="r39-3F-edn" id="Gxi-Zp-dtJ"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="80.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="StarEmpty" width="22" height="22"/>
+        <image name="StarFull" width="22" height="22"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

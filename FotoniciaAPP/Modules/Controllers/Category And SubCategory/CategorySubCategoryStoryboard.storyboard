@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Category-->
+        <scene sceneID="91o-tD-LSY">
+            <objects>
+                <viewController storyboardIdentifier="CategoryViewController" title="Category" id="FmI-BY-vgQ" customClass="CategoryViewController" customModule="FotoniciaAPP" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ppx-io-Yr2"/>
+                        <viewControllerLayoutGuide type="bottom" id="D2e-Mm-oJG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b6u-wg-iTE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="YDK-3m-uqY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="FmI-BY-vgQ" id="Sri-36-Mmg"/>
+                                    <outlet property="delegate" destination="FmI-BY-vgQ" id="iU1-sZ-Sfb"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YDK-3m-uqY" firstAttribute="leading" secondItem="b6u-wg-iTE" secondAttribute="leading" id="LuW-eZ-BWF"/>
+                            <constraint firstItem="D2e-Mm-oJG" firstAttribute="top" secondItem="YDK-3m-uqY" secondAttribute="bottom" id="aBN-57-1U2"/>
+                            <constraint firstAttribute="trailing" secondItem="YDK-3m-uqY" secondAttribute="trailing" id="giD-Ij-DYl"/>
+                            <constraint firstItem="YDK-3m-uqY" firstAttribute="top" secondItem="b6u-wg-iTE" secondAttribute="top" id="tiK-o4-0SP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="MbK-w5-hdb"/>
+                    <connections>
+                        <outlet property="tableView" destination="YDK-3m-uqY" id="P6X-Ow-zn9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R4i-2f-ZEj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="920.79999999999995" y="173.16341829085459"/>
+        </scene>
+        <!--Sub Category View Controller-->
+        <scene sceneID="mXm-gk-aoP">
+            <objects>
+                <viewController storyboardIdentifier="SubCategoryViewController" id="hE6-8M-lMn" customClass="SubCategoryViewController" customModule="FotoniciaAPP" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KsQ-Y4-6ZC"/>
+                        <viewControllerLayoutGuide type="bottom" id="DX5-QX-2pP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fra-tn-XlR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="mbu-bX-Xg5">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="hE6-8M-lMn" id="McJ-UF-HBz"/>
+                                    <outlet property="delegate" destination="hE6-8M-lMn" id="h8o-hV-Fkf"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="mbu-bX-Xg5" secondAttribute="trailing" id="5et-mE-SML"/>
+                            <constraint firstItem="mbu-bX-Xg5" firstAttribute="top" secondItem="fra-tn-XlR" secondAttribute="top" id="Dkq-sd-GDy"/>
+                            <constraint firstItem="DX5-QX-2pP" firstAttribute="top" secondItem="mbu-bX-Xg5" secondAttribute="bottom" id="xbe-iN-Dbd"/>
+                            <constraint firstItem="mbu-bX-Xg5" firstAttribute="leading" secondItem="fra-tn-XlR" secondAttribute="leading" id="yQl-ll-d6o"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="mbu-bX-Xg5" id="tW5-nb-hT7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="id3-z5-VdY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1652" y="172.26386806596702"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fxP-Y1-Yqn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="G0u-Oj-VSo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="AhA-5V-IO8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="FmI-BY-vgQ" kind="relationship" relationship="rootViewController" id="m0O-zR-UT9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iMq-VY-qfM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-18.399999999999999" y="173.16341829085459"/>
+        </scene>
+    </scenes>
+</document>
